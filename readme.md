@@ -11,7 +11,7 @@
 - [Integration Allure TestOps](#earth_africa-Интеграция-c-Allure-TestOps)
 - [Notification in Telegram](#earth_africa-Уведомление-в-Telegram-при-помощи-бота)
 
-## 🧰: Стек технологий
+## 🧰: Technology stack
 
 <p align="center">
 <a href="https://www.jetbrains.com/idea/"><img src="images/logo/IDEA.svg" width="50" height="50"  alt="IDEA"/></a>
