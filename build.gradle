@@ -47,9 +47,16 @@ test {
 
 }
 
-task lombok_tests(type: Test) {
+
+task negative(type: Test) {
     useJUnitPlatform {
-        includeTags("Lombok")
+        includeTags("negative")
+    }
+    systemProperties(System.getProperties())
+}
+task positive(type: Test) {
+    useJUnitPlatform {
+        includeTags("postitive")
     }
     systemProperties(System.getProperties())
 }

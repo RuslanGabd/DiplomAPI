@@ -51,23 +51,25 @@ Allure report includes:
 
 ### Run tests locally
 ```
-gradle clean test -Denv=local
+gradle clean test 
 ```
 
 If necessary, you can override the launch options
 ```
-test/MainPage/ContactPage/NewsPage 
+gradle clean
+test/positive/negative - all tests/postitve/negative
 
 ```
 
 ### Run tests on a remote browser
 ```
-gradle clean test -Denv=remote
+clean test
 ```
 You can also override launch options if needed.
 
 ```
-test/MainPage/ContactPage/NewsPage 
+clean
+test/positive/negative - all tests/postitve/negative
 ```
 ## :hammer_and_wrench:: Build options in Jenkins:
 

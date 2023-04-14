@@ -16,19 +16,15 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import model.CreateUserResponseModel;
-import model.ListUserModel;
-import model.LoginBodyModel;
-import model.LoginErrorResponseModel;
-import model.UpdateUserResponseModel;
-import model.UserBodyModel;
+
+import model.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 @Tag("Lombok")
 public class ReqresInLombokTest {
-
+  @Tag("positive")
   @DisplayName("Checking the name and position when creating a user")
   @Test
   void createUser() {
@@ -51,7 +47,7 @@ public class ReqresInLombokTest {
       assertThat(response.getJob()).isEqualTo("leader");
     });
   }
-
+  @Tag("positive")
   @DisplayName("Checking the number of all users")
   @Test
   void getUsers() {
@@ -67,7 +63,7 @@ public class ReqresInLombokTest {
       assertThat(response.getTotal()).isEqualTo(12);
     });
   }
-
+  @Tag("positive")
   @DisplayName("Editing the user's place of work")
   @Test
   void editUser() {
@@ -88,7 +84,7 @@ public class ReqresInLombokTest {
       assertThat(response.getUpdatedAt()).contains(dateTime);
     });
   }
-
+  @Tag("positive")
   @DisplayName("Deleting a user")
   @Test
   void deleteUser() {
@@ -102,6 +98,7 @@ public class ReqresInLombokTest {
 
   }
 
+  @Tag("negative")
   @DisplayName("Login-Unsuccessful")
   @Test
   void loginUnsuccessful() {
@@ -116,6 +113,30 @@ public class ReqresInLombokTest {
             .then()
             .spec(loginResponseSpec)
             .extract().as(LoginErrorResponseModel.class));
+
+    step("Error checking", () -> {
+      assertThat(response.getError()).isEqualTo("Missing password");
+    });
+  }
+
+
+  @Tag("negative")
+  @DisplayName("Register-Unsuccessful")
+  @Test
+  void registerUnsuccessful() {
+
+    String email = "sydney@fife";
+    LoginBodyModel data = new LoginBodyModel();
+    data.setEmail(email);
+
+    RegisterErrorResponseModel response = step("Data entry", () ->
+            given(loginRequestSpec)
+                    .body(data)
+                    .when()
+                    .post("/register")
+                    .then()
+                    .spec(loginResponseSpec)
+                    .extract().as(RegisterErrorResponseModel.class));
 
     step("Error checking", () -> {
       assertThat(response.getError()).isEqualTo("Missing password");

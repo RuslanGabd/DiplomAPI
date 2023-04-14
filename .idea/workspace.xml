@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d21551f-fabb-47bb-a278-c0f033524dd7" name="Changes" comment="cm">
-      <change afterPath="$PROJECT_DIR$/images/screens/telegram.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/model/RegisterErrorResponseModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/ReqresInLombokTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ReqresInLombokTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +19,13 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -46,7 +54,7 @@
       <recent name="C:\Users\Tool Company\IdeaProjects\DiplomAPI" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ReqresInLombokTest">
+  <component name="RunManager" selected="Gradle.ReqresInLombokTest.registerUnsuccessful">
     <configuration name="ReqresInLombokTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -61,6 +69,30 @@
             <option value=":lombok_tests" />
             <option value="--tests" />
             <option value="&quot;tests.ReqresInLombokTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>true</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="ReqresInLombokTest.registerUnsuccessful" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":lombok_tests" />
+            <option value="--tests" />
+            <option value="&quot;tests.ReqresInLombokTest.registerUnsuccessful&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -97,6 +129,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ReqresInLombokTest.registerUnsuccessful" />
         <item itemvalue="Gradle.ReqresInLombokTest" />
         <item itemvalue="Gradle.ReqresInTest" />
       </list>
@@ -125,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681463124875</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="cm">
+      <created>1681463897759</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1681463897759</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
