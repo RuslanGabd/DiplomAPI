@@ -25,74 +25,103 @@
 <a href="https://https://telegram.org/"><img src="images/logo/Telegram.svg" width="50" height="50"  alt="Telegram"/></a>
 </p>
 
-## :male_detective:: Реализованные проверки
+Autotests are written in <code>Java</code> using <code>JUnit 5</code> and <code>Gradle</code>.
+For UI tests, the [Selenide] framework (https://selenide.org/) was used.
+Tests can be run locally or using [Selenoid](https://aerokube.com/selenoid/).
+Also implemented build in <code>Jenkins</code> with generation of an Allure report and sending a notification with the results to <code>Telegram</code> after the run is completed.
 
-- ✓ POST/api/users - создание учетной записи пользователя
-- ✓ GET/api/users/2 - получение информации о пользователе
-- ✓ PATCH/api/users/2 - редактирование учетной записи пользователя
-- ✓ DELETE/api/users/2 - удаление учетной записи пользователя
-- ✓ GET/api//users?page=2 - получение списка пользователей
-- ✓ POST/api/login - вход в систему
+Allure report includes:
+* test execution steps;
+* screenshot of the page in the browser at the end of the autotest;
+* Page Source;
+* browser console logs;
+* video of the autotest.
+
+## :male_detective:: Implemented checks
+
+- ✓ POST/api/users - creating a user account
+- ✓ GET/api//users?page=2 - getting a list of users
+- ✓ POST/api/login - login
 -  ✓ POST/api/register - регистрация в системе
 
-## <img src="images/logo/Jenkins.svg" width="25" height="25"  alt="Jenkins"/></a> Сборка <a target="_blank" href="https://jenkins.autotests.cloud/job/017-dumyka-itavia/"> Jenkins </a>
+ 
+
+
+# :running_woman: Run tests
+
+### Run tests locally
+```
+gradle clean test -Denv=local
+```
+
+If necessary, you can override the launch options
+```
+test/MainPage/ContactPage/NewsPage 
+
+```
+
+### Run tests on a remote browser
+```
+gradle clean test -Denv=remote
+```
+You can also override launch options if needed.
+
+```
+test/MainPage/ContactPage/NewsPage 
+```
+## :hammer_and_wrench:: Build options in Jenkins:
+
+- remote (remote server address)
+- browserSize (browser window size, default 1920x1080)
+- browserVersion (browser version, default 100.0)
+- browser (browser, chrome by default)
+
+
+
+
+## <img src="images/logo/Jenkins.svg" width="25" height="25"  alt="Jenkins"/></a> Build <a target="_blank" href="https://jenkins.autotests.cloud/job/C17_ruslan_g_r_unit_25/"> Jenkins </a>
 <p align="center">
-<a href="https://jenkins.autotests.cloud/job/ApiDiplomDumyka/"><img src="images/screens/AllureReport.jpg" alt="Jenkins1"/></a>
+<a href="https://jenkins.autotests.cloud/job//"><img src="images/screens/Jenkins.png" alt="Jenkins1"/></a>
 </p>
 
-## 🧪: Пример авто-тест кейса
-<p align="center">
-<img title="AllureSuite" src="images/screens/AllureTC.jpg">
-</p>
-
-## :rocket:: Запуск тестов из терминала
-Локальный запуск:
-```
-gradle clean test
-```
-При необходимости можно переопределить параметры запуска:
-```
-gradle clean
-test/positive/negative - все тесты/позитивные/негативные
-```
-
-Удаленный запуск:
-```
-clean test
-```
-
-При необходимости можно переопределить параметры запуска:
-```
-clean
-test/positive/negative - все тесты/позитивные/негативные
-```
-
-## <img src="images/logo/Allure.svg" width="25" height="25"  alt="Allure"/></a> Allure отчет <a target="_blank" href="https://jenkins.autotests.cloud/job/IBS_test/allure/"></a>
-
-## ⛅: Основной отчет
-<p align="center">
-<img title="Allure" src="images/screens/AllureReport.jpg">
-</p>
-
-## <img src="images/logo/Allure.svg" width="25" height="25"  alt="Allure_TO"/></a> Интеграция с Allure TestOps <a target="_blank" href="https://allure.autotests.cloud/project/1858/dashboards"></a>
-
-## :bar_chart:: Доска
-<p align="center">
-<img title="AllureDashboard" src="images/screens/Dashboard.jpg">
-</p>
-
-## :pinching_hand:: Пример тест-кейса
-<p align="center">
-<img title="AllureTC" src="images/screens/TestCaseExample.jpg">
-</p>
-
-## :runner:: Прогоны
-<p align="center">
-<img title="Allure Tests" src="images/screens/Runs.jpg">
-</p>
-
-## <img src="images/logo/Telegram.svg" width="25" height="25"  alt="Telegram"/></a> Уведомления в телеграм с использованием бота
+## <img width="4%" style="vertical-align:middle" title="Allure Report" src="images/logo/Allure.svg"> <a href="https://jenkins.autotests.cloud/job/C17_ruslan_g_r_unit_25/6/allure/">Example Allure-report</a>
+### Overview
 
 <p align="center">
-<img title="telegram" src="images/screens/Telegram1.jpg">
+<img title="Allure Overview" src="images/screens/AllureReport.PNG">
 </p>
+
+### Test result
+
+<p align="center">
+<img title="Test Results in Alure" src="images/screens/AllureReportTests.PNG">
+</p>
+
+## <img width="4%" title="Allure TestOPS" src="images/logo/allureTestOps.svg"> Integration  [Allure TestOps](https://qameta.io/)
+
+### Main Dashboard
+
+<p align="center">
+  <img src="images/screens/AllureTestOpsMain.png" alt="dashboard" width="900">
+</p>
+
+### Test case
+
+<p align="center">
+  <img src="images/screens/AllureTestOpsTestCases.png" alt="testcase" width="900">
+</p>
+
+# Jira integration
+<p align="center">
+  <img src="images/screens/JiraARHS.png" alt="JiraIntegration" width="950">
+</p>
+
+
+
+### <img width="4%" style="vertical-align:middle" title="Telegram" src="images/logo/Telegram.svg"> Telegram notifications using a bot
+
+<p align="center">
+<img title="telegram" src="images/screens/telegram.jpg">
+</p>
+
+
