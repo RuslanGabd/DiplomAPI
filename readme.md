@@ -1,15 +1,15 @@
-# Проект по автоматизации тестирования API сервиса Reqres
+# Reqres API Testing Automation Project
 <img  src="images/screens/reqresin.jpg">
 
-## :man_student:: Содержание:
+## :man_student:: Content:
 
-- [Стек технологий](#earth_africa-Стек-технологий)
-- [Реализованные проверки](#earth_africa-Реализованные-проверки)
-- [Сборка в Jenkins](#earth_africa-Jenkins-job)
-- [Запуск из терминала](#earth_africa-Запуск-тестов-из-терминала)
-- [Allure отчет](#earth_africa-Allure-отчет)
-- [Интеграция с Allure TestOps](#earth_africa-Интеграция-c-Allure-TestOps)
-- [Уведомления в Telegram](#earth_africa-Уведомление-в-Telegram-при-помощи-бота)
+- [Technology stack](#earth_africa-Стек-технологий)
+- [Implemented checks](#earth_africa-Реализованные-проверки)
+- [Building in Jenkins](#earth_africa-Jenkins-job)
+- [Run from terminal](#earth_africa-Запуск-тестов-из-терминала)
+- [Allure report](#earth_africa-Allure-отчет)
+- [Integration Allure TestOps](#earth_africa-Интеграция-c-Allure-TestOps)
+- [Notification in Telegram](#earth_africa-Уведомление-в-Telegram-при-помощи-бота)
 
 ## 🧰: Стек технологий
 
