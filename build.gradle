@@ -56,7 +56,7 @@ task negative(type: Test) {
 }
 task positive(type: Test) {
     useJUnitPlatform {
-        includeTags("postitive")
+        includeTags("positive")
     }
     systemProperties(System.getProperties())
 }
