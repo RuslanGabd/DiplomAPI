@@ -5,12 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d21551f-fabb-47bb-a278-c0f033524dd7" name="Changes" comment="cm">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/screens/AllureReport.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/images/screens/AllureReport.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/screens/AllureReportTests.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/images/screens/AllureReportTests.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/screens/AllureTestOpsMain.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/images/screens/AllureTestOpsMain.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/screens/AllureTestOpsTestCases.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/images/screens/AllureTestOpsTestCases.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/screens/telegram.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/images/screens/telegram.PNG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -182,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681466282894</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="cm">
+      <created>1681467225913</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1681467225913</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
