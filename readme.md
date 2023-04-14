@@ -42,9 +42,8 @@ Allure report includes:
 - ✓ POST/api/users - creating a user account
 - ✓ GET/api//users?page=2 - getting a list of users
 - ✓ POST/api/login - login
--  ✓ POST/api/register - регистрация в системе
-
- 
+- ✓ POST/api/register - registration in the system
+- ✓ DELETE/api/users/2 - user account deletion
 
 
 # :running_woman: Run tests
@@ -111,11 +110,6 @@ test/positive/negative - all tests/postitve/negative
 
 <p align="center">
   <img src="images/screens/AllureTestOpsTestCases.png" alt="testcase" width="900">
-</p>
-
-# Jira integration
-<p align="center">
-  <img src="images/screens/JiraARHS.png" alt="JiraIntegration" width="950">
 </p>
 
 
