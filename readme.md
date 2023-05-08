@@ -80,12 +80,12 @@ test/positive/negative - all tests/postitve/negative
 
 
 
-## <img src="images/logo/Jenkins.svg" width="25" height="25"  alt="Jenkins"/></a> Build <a target="_blank" href="https://jenkins.autotests.cloud/job/C17_ruslan_g_r_unit_25/"> Jenkins </a>
+## <img src="images/logo/Jenkins.svg" width="25" height="25"  alt="Jenkins"/></a> Build <a target="_blank" href="https://jenkins.autotests.cloud/job/C17_ruslan_g_r_diplomAPI/"> Jenkins </a>
 <p align="center">
 <a href="https://jenkins.autotests.cloud/job/C17_ruslan_g_r_diplomAPI/"><img src="images/screens/Jenkins.PNG" alt="Jenkins1"/></a>
 </p>
 
-## <img width="4%" style="vertical-align:middle" title="Allure Report" src="images/logo/Allure.svg"> <a href="https://jenkins.autotests.cloud/job/C17_ruslan_g_r_unit_25/6/allure/">Example Allure-report</a>
+## <img width="4%" style="vertical-align:middle" title="Allure Report" src="images/logo/Allure.svg"> <a href="https://jenkins.autotests.cloud/job/C17_ruslan_g_r_diplomAPI/10/allure/">Example Allure-report</a>
 ### Overview
 
 <p align="center">
