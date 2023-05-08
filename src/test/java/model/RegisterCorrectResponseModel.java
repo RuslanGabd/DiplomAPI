@@ -4,6 +4,6 @@ import lombok.Data;
 
 @Data
 public class RegisterCorrectResponseModel {
-    String error;
+    Integer id;
     String token;
 }
