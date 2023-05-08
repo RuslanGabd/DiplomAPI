@@ -85,7 +85,7 @@ test/positive/negative - all tests/postitve/negative
 <a href="https://jenkins.autotests.cloud/job/C17_ruslan_g_r_diplomAPI/"><img src="images/screens/Jenkins.PNG" alt="Jenkins1"/></a>
 </p>
 
-## <img width="4%" style="vertical-align:middle" title="Allure Report" src="images/logo/Allure.svg"> <a href="https://jenkins.autotests.cloud/job/C17_ruslan_g_r_diplomAPI/10/allure/">Example Allure-report</a>
+## <img width="4%" style="vertical-align:middle" title="Allure Report" src="images/logo/Allure.svg"> <a href="https://jenkins.autotests.cloud/job/C17_ruslan_g_r_diplomAPI/13/allure/">Example Allure-report</a>
 ### Overview
 
 <p align="center">
