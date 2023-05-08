@@ -20,9 +20,17 @@ public class LoginSpec {
       .baseUri("https://reqres.in")
       .basePath("/api");
 
-  public static ResponseSpecification loginResponseSpec = new ResponseSpecBuilder()
+  public static ResponseSpecification loginResponseSpecError = new ResponseSpecBuilder()
       .log(STATUS)
       .log(BODY)
       .expectStatusCode(400)
       .build();
+
+  public static ResponseSpecification loginResponseSpecCorrect = new ResponseSpecBuilder()
+          .log(STATUS)
+          .log(BODY)
+          .expectStatusCode(200)
+          .build();
+
+
 }
