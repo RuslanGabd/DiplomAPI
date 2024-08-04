@@ -1,4 +1,4 @@
-# Reqres API Testing Automation Project
+# API Testing Automation Project
 <img  src="images/screens/reqresin.jpg">
 
 ## :man_student:: Content:
